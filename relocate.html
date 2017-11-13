@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+	<style>
+		#container{
+			height:50%;
+			z-index: 110;
+		}
+		#result{
+			font-size:14px;
+			color:#666;
+			height:30px;
+			line-height: 30px;
+			position: absolute;
+			bottom:0;
+		}
+		#panel {
+            position: fixed;
+            z-index: 120;
+            background-color: white;
+            max-height: 90%;
+            overflow-y: auto;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            border-bottom: solid 1px silver;
+        } 
+	</style>
+	<script src="js/jquery.min.js"></script>
+	<script src="http://webapi.amap.com/maps?v=1.3&key=f4b8b14d63028fce042a71b0e419554c"></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=f4b8b14d63028fce042a71b0e419554c&plugin=AMap.Geocoder"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+<html>
+<body>
+	<div id="container"></div>
+	<p id="demo"></p>
+	<div id="result"></div>
+	<div id="panel"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
